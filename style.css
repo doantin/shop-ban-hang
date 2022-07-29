@@ -1,0 +1,125 @@
+tml {
+  height: 3000px;
+  font-size: 25px;
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 12px;
+  }
+}
+body {
+  width: auto;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+p {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.strore {
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+}
+
+.product-con {
+  width: 25%;
+  float: left;
+}
+
+.product {
+  position: relative;
+  width: auto;
+  margin: 0%;
+  padding-bottom: 100%;
+  transition: all 0.5s;
+}
+.product * {
+  transition: all 0.5s;
+}
+.product .shop-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-size: 10px;
+  background-position: center;
+}
+.product:hover {
+  cursor: pointer;
+}
+.product:hover .nazwa {
+  color: white;
+  background-color: black;
+}
+.product:hover .cena {
+  background: none;
+  color: red;
+  transform: scale(1.5, 1.5) translate(-20%, -20%);
+}
+.product:hover .shop-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  background-image: url("http://image005.flaticon.com/1/svg/37/37464.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20%;
+}
+.product .nazwa {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 5%;
+  top: 0;
+}
+.product .cena {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 5%;
+  bottom: 0;
+  right: 0;
+}
+
+.opis {
+  font-size: 0.8rem;
+  padding: 5%;
+  min-height: 50px;
+  bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .product-con {
+    width: 50%;
+    float: left;
+  }
+
+  .active-clear {
+    clear: both;
+  }
+}
+@media (max-width: 400px) {
+  .product-con {
+    width: 100%;
+    clear: both;
+  }
+}
